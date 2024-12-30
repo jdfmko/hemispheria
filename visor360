@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 360</title>
+    <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="viewer" style="width: 800px; height: 600px;"></div>
+
+    <script>
+        const viewer = new PhotoSphereViewer.Viewer({
+            container: document.getElementById('viewer'),
+            panorama: 'https://almacruceros.com/wp-content/uploads/visor360/gran-suite-a.jpg', // URL de la imagen 360
+            navbar: true,
+            touchmove: true,
+        });
+    </script>
+</body>
+</html>
